@@ -7,7 +7,7 @@ const pkg = require(path.resolve(__dirname, 'package.json'));
 module.exports = {
     entry: './src/index.js',
     plugins: [
-        new CleanWebpackPlugin(['docs']),
+        new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
             title: pkg.name,
             template: 'src/index.html'
@@ -15,7 +15,7 @@ module.exports = {
     ],
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'docs')
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [{
