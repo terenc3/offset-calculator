@@ -1,1 +1,2 @@
-# Wildfyl portoffset calculator
+# WildFly ports calculator
+Single-page application to calculate WildFly ports 
